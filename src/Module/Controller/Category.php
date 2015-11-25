@@ -11,6 +11,7 @@ namespace App\Module\Product\Controller;
 use CRM\App\Controller\BaseController;
 
 /**
+ * @section mod.Product.Category
  */
 class Category extends BaseController
 {
