@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS `#__product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category` int(11) NOT NULL,
+  `serialNumber` varchar(127) COLLATE utf8_unicode_ci NOT NULL,
+  `manufacturerSerialNumber` varchar(127) COLLATE utf8_unicode_ci NOT NULL,
+  `owner` int(11) NOT NULL,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `price` double NOT NULL,
+  `tax` tinyint(4) NOT NULL,
+  `qtyInStock` int(11) NOT NULL,
+  `unit` int(11) NOT NULL,
+  `sellStart` int(11) NOT NULL,
+  `sellEnd` int(11) NOT NULL,
+  `sellAllowed` char(1) COLLATE utf8_unicode_ci NOT NULL DEFAULT '1',
+  `supportStart` int(11) NOT NULL,
+  `supportEnd` int(11) NOT NULL,
+  `description` text COLLATE utf8_unicode_ci NOT NULL,
+  `created` int(11) NOT NULL,
+  `modified` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
